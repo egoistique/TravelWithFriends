@@ -18,8 +18,8 @@
 ## <span style="font-size:larger;">Документация: </span>
 Курсовой проект
 
-Техническое задание 
-
+[Техническое задание docx](https://github.com/egoistique/TravelWithFriends/blob/main/Техническое%20задание.docx)
+[Техническое задание pdf](https://github.com/egoistique/TravelWithFriends/blob/main/Техническое%20задание.pdf)
 Сопроводительное письмо
 
 ## <span style="font-size:larger;">Презентации проекта: </span>
