@@ -1,10 +1,12 @@
 # Веб-приложение TravelWithFriends
 
+# ТП-7-6
+
 ## <span style="font-size:larger;">Студенты</span>
 
 - [Екатерина Воронежская](https://github.com/egoistique)  - Тимлид, Back-end разработчик
-- [Валерий Деревянко](https://github.com/VaL1y)  - Системный аналитик, технический писатель
-- [Максим Бондарев](https://github.com/bdybgs) - Front-end разработчик
+- [Валерий Деревянко](https://github.com/VaL1y)  - Аналитик, технический писатель
+- [Максим Бондарев](https://github.com/bdybgs) - Front-end разработчик, тестировщик
 
 ## <span style="font-size:larger;">Тема: </span>
 
@@ -18,11 +20,13 @@
 ## <span style="font-size:larger;">Документация: </span>
 Курсовой проект
 
-- [Техническое задание docx](https://github.com/egoistique/TravelWithFriends/blob/main/Техническое%20задание.docx)
-- [Техническое задание pdf](https://github.com/egoistique/TravelWithFriends/blob/main/Техническое%20задание.pdf)
-- Сопроводительное письмо
-
-## <span style="font-size:larger;">Презентации проекта: </span>
+- [Техническое задание docx](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Техническое%20задание.docx)
+- [Техническое задание pdf](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Техническое%20задание.pdf)
+- [Сопроводительное письмо docx](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Сопроводительное%20письмо.docx)
+- [Сопроводительное письмо pdf](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Сопроводительное%20письмо.pdf)
+- [Презентация pdf]()
+- [Презентация pptx]()
+- [Видео]()
 
 ## <span style="font-size:larger;">Аналитика приложения: </span>
 
