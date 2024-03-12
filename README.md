@@ -24,8 +24,8 @@
 - [Техническое задание pdf](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Техническое%20задание.pdf)
 - [Сопроводительное письмо docx](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Сопроводительное%20письмо.docx)
 - [Сопроводительное письмо pdf](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Сопроводительное%20письмо.pdf)
-- [Презентация pdf]()
-- [Презентация pptx]()
+- [Презентация pdf](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Презентация.pdf) 
+- [Презентация pptx](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Презентация.pptx)
 - [Видео]()
 
 ## <span style="font-size:larger;">Аналитика приложения: </span>
