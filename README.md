@@ -15,7 +15,7 @@
 ## <span style="font-size:larger;">Сервисы: </span>
 - [YouTrack](https://triptogether.youtrack.cloud/agiles/159-2/current)
 - [Miro](https://miro.com/app/board/uXjVNKQcULM=/)
-- [Figma](https://www.figma.com/file/6DFy8nrEVsybBSivgE4c1e/UX/UI-kit-+-design?type=design&node-id=0:1&mode=design&t=SQNt90E0KVube1jM-1)
+- [Figma](https://www.figma.com/file/2lYl2967DBFk9prQNro5qh/WebTrip?type=design&node-id=0-1&mode=design&t=pHlSkdu70V9r9KgC-0)
 
 ## <span style="font-size:larger;">Документация: </span>
 Курсовой проект
