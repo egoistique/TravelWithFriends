@@ -26,7 +26,7 @@
 - [Сопроводительное письмо pdf](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Сопроводительное%20письмо.pdf)
 - [Презентация pdf](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Презентация.pdf) 
 - [Презентация pptx](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Презентация.pptx)
-- [Видео]()
+- [Видеопрезентация](https://youtu.be/cBEjIvjRMoU)
 
 ## <span style="font-size:larger;">Аналитика приложения: </span>
 
