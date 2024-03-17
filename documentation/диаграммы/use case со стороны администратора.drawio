@@ -1,6 +1,6 @@
-<mxfile host="Electron" modified="2024-03-13T16:48:52.369Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/23.1.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="-3V_hj83M_ZTHezG2Btm" version="23.1.5" type="device">
+<mxfile host="Electron" modified="2024-03-17T16:58:16.117Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/23.1.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="-kWbA4h2H9ACiNS7N_aN" version="23.1.5" type="device">
   <diagram name="Страница — 1" id="TSzUi3ge_-jL3PDtBmLo">
-    <mxGraphModel dx="472" dy="828" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1434" dy="844" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -12,25 +12,28 @@
             </Array>
           </mxGeometry>
         </mxCell>
+        <mxCell id="IpJxnV-jDooabs5pYq90-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="H-OuzYOi9V8KT-EOkq-Y-3" target="IpJxnV-jDooabs5pYq90-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="H-OuzYOi9V8KT-EOkq-Y-3" value="Администратор" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
           <mxGeometry x="130" y="490" width="30" height="60" as="geometry" />
         </mxCell>
         <mxCell id="H-OuzYOi9V8KT-EOkq-Y-4" value="Посмотреть опубликованные путешествия" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="330" y="600" width="120" height="80" as="geometry" />
+          <mxGeometry x="280" y="590" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="H-OuzYOi9V8KT-EOkq-Y-7" value="Удалить поездку" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="330" y="490" width="120" height="60" as="geometry" />
+          <mxGeometry x="280" y="525" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="H-OuzYOi9V8KT-EOkq-Y-11" value="Удалить пользователя" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="330" y="380" width="120" height="60" as="geometry" />
+          <mxGeometry x="280" y="380" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="H-OuzYOi9V8KT-EOkq-Y-12" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;edgeStyle=orthogonalEdgeStyle;" parent="1" source="H-OuzYOi9V8KT-EOkq-Y-3" target="H-OuzYOi9V8KT-EOkq-Y-7" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="170" y="520" as="sourcePoint" />
             <mxPoint x="310" y="431" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="290" y="520" />
-              <mxPoint x="290" y="520" />
+              <mxPoint x="220" y="520" />
+              <mxPoint x="220" y="555" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -42,6 +45,9 @@
               <mxPoint x="220" y="520" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="IpJxnV-jDooabs5pYq90-1" value="Упарвлять подпиской пользователя" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="450" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

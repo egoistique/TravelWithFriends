@@ -1,0 +1,42 @@
+<mxfile host="Electron" modified="2024-03-17T19:17:13.958Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/23.1.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="cWMMuEySCaNzvTZd7Wln" version="23.1.5" type="device">
+  <diagram name="Страница — 1" id="jIb8Ql70JPB9MkBO06P0">
+    <mxGraphModel dx="726" dy="1274" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="cN6NISF-SraL9DonRlxl-8" value="&amp;lt;&amp;lt;Server&amp;gt;&amp;gt;" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;fontFamily=Times New Roman;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="330" y="120" width="340" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="cN6NISF-SraL9DonRlxl-4" value="PostgreSQL" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="370" y="350" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="cN6NISF-SraL9DonRlxl-16" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" parent="1" source="cN6NISF-SraL9DonRlxl-8" target="cN6NISF-SraL9DonRlxl-11" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="840" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cN6NISF-SraL9DonRlxl-9" value="C#.Net&lt;br&gt;&amp;nbsp;&amp;lt;&amp;lt;ASP.NET Core&amp;gt;&amp;gt;" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="414" y="230" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="cN6NISF-SraL9DonRlxl-10" value="" style="shape=link;html=1;rounded=0;width=-1;fontFamily=Times New Roman;fontSize=14;entryX=0.176;entryY=0.029;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="cN6NISF-SraL9DonRlxl-8" edge="1">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="330" y="180" as="sourcePoint" />
+            <mxPoint x="570" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cN6NISF-SraL9DonRlxl-11" value="&amp;lt;&amp;lt;Client&amp;gt;&amp;gt;" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;fontFamily=Times New Roman;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="870" y="190" width="240" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="cN6NISF-SraL9DonRlxl-12" value="TypeScript&amp;lt;&amp;lt;React&amp;gt;&amp;gt;" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="910" y="280" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="cN6NISF-SraL9DonRlxl-13" value="" style="shape=link;html=1;rounded=0;width=-1;fontFamily=Times New Roman;fontSize=14;" parent="1" edge="1">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="870" y="240" as="sourcePoint" />
+            <mxPoint x="1100" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
