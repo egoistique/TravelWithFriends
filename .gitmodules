@@ -1,3 +1,6 @@
 [submodule "TravelWithFriends_backend"]
 	path = TravelWithFriends_backend
 	url = https://github.com/egoistique/TravelWithFriends_backend
+[submodule "TravelWithFriends_frontend"]
+	path = TravelWithFriends_frontend
+	url = https://github.com/bdybgs/TravelWithFriends-web
