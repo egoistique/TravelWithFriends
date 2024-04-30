@@ -15,7 +15,9 @@
 ## <span style="font-size:larger;">Аттестация 2: </span>
 - [Видеопрезентация](https://youtu.be/3s0U6GF04ig)
 - [Презентация pptx](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Презентация2аттестация.pptx) 
-- [Презентация pdf](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Презентация2аттестация.pdf) 
+- [Презентация pdf](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Презентация2аттестация.pdf)
+- [Курсовой проект pdf](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Курсовой%20Проект.pdf)
+- [Курсовой проект docx](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Курсовой%20Проект.docx)
 
 ## <span style="font-size:larger;">Сервисы: </span>
 - [YouTrack](https://triptogether.youtrack.cloud/agiles/159-2/current)
@@ -32,6 +34,8 @@
 - [Презентация pdf](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Презентация.pdf) 
 - [Презентация pptx](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Презентация.pptx)
 - [Видеопрезентация](https://youtu.be/cBEjIvjRMoU)
+- [Курсовой проект pdf](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Курсовой%20Проект.pdf)
+- [Курсовой проект docx](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Курсовой%20Проект.docx)
 
 ## <span style="font-size:larger;">Аналитика приложения: </span>
 
