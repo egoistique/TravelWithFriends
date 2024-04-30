@@ -1,0 +1,600 @@
+openapi: 3.0.1
+info:
+  title: Travel WF API
+  version: Product - v1
+paths:
+  /v1/Accounts:
+    post:
+      tags:
+        - Accounts
+      parameters:
+        - name: name
+          in: query
+          schema:
+            type: string
+        - name: email
+          in: query
+          schema:
+            type: string
+        - name: password
+          in: query
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/Travel.Services.UserAccount.UserAccountModel'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Travel.Services.UserAccount.UserAccountModel'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/Travel.Services.UserAccount.UserAccountModel'
+  '/v1/Accounts/status/{userId}':
+    put:
+      tags:
+        - Accounts
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Travel.Services.UserAccount.ChangeUserStatusModel'
+          text/json:
+            schema:
+              $ref: '#/components/schemas/Travel.Services.UserAccount.ChangeUserStatusModel'
+          application/*+json:
+            schema:
+              $ref: '#/components/schemas/Travel.Services.UserAccount.ChangeUserStatusModel'
+      responses:
+        '200':
+          description: Success
+    get:
+      tags:
+        - Accounts
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: Success
+  /v1/Activity:
+    get:
+      tags:
+        - Activity
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Travel.Services.Activities.ActivityModel'
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Travel.Services.Activities.ActivityModel'
+            text/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Travel.Services.Activities.ActivityModel'
+    post:
+      tags:
+        - Activity
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Travel.Services.Activities.CreateModel'
+          text/json:
+            schema:
+              $ref: '#/components/schemas/Travel.Services.Activities.CreateModel'
+          application/*+json:
+            schema:
+              $ref: '#/components/schemas/Travel.Services.Activities.CreateModel'
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/Travel.Services.Activities.ActivityModel'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Travel.Services.Activities.ActivityModel'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/Travel.Services.Activities.ActivityModel'
+  '/v1/Activity/{id}':
+    get:
+      tags:
+        - Activity
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: Success
+    put:
+      tags:
+        - Activity
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Travel.Services.Activities.UpdateModel'
+          text/json:
+            schema:
+              $ref: '#/components/schemas/Travel.Services.Activities.UpdateModel'
+          application/*+json:
+            schema:
+              $ref: '#/components/schemas/Travel.Services.Activities.UpdateModel'
+      responses:
+        '200':
+          description: Success
+    delete:
+      tags:
+        - Activity
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: Success
+  '/v1/Activity/trip/{tripId}':
+    get:
+      tags:
+        - Activity
+      parameters:
+        - name: tripId
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Travel.Services.Activities.ActivityModel'
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Travel.Services.Activities.ActivityModel'
+            text/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Travel.Services.Activities.ActivityModel'
+  /v1/Auth:
+    post:
+      tags:
+        - Auth
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Travel.API.Controllers.LoginRequest'
+          text/json:
+            schema:
+              $ref: '#/components/schemas/Travel.API.Controllers.LoginRequest'
+          application/*+json:
+            schema:
+              $ref: '#/components/schemas/Travel.API.Controllers.LoginRequest'
+      responses:
+        '200':
+          description: Success
+  /v1/Trip:
+    get:
+      tags:
+        - Trip
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Travel.Services.Trips.TripModel'
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Travel.Services.Trips.TripModel'
+            text/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Travel.Services.Trips.TripModel'
+    post:
+      tags:
+        - Trip
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Travel.Services.Trips.CreateModel'
+          text/json:
+            schema:
+              $ref: '#/components/schemas/Travel.Services.Trips.CreateModel'
+          application/*+json:
+            schema:
+              $ref: '#/components/schemas/Travel.Services.Trips.CreateModel'
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/Travel.Services.Trips.TripModel'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Travel.Services.Trips.TripModel'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/Travel.Services.Trips.TripModel'
+  '/v1/Trip/{id}':
+    get:
+      tags:
+        - Trip
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: Success
+    put:
+      tags:
+        - Trip
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Travel.Services.Trips.UpdateModel'
+          text/json:
+            schema:
+              $ref: '#/components/schemas/Travel.Services.Trips.UpdateModel'
+          application/*+json:
+            schema:
+              $ref: '#/components/schemas/Travel.Services.Trips.UpdateModel'
+      responses:
+        '200':
+          description: Success
+    delete:
+      tags:
+        - Trip
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: Success
+  '/v1/Trip/creator/{creatorId}':
+    get:
+      tags:
+        - Trip
+      parameters:
+        - name: creatorId
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Travel.Services.Trips.TripModel'
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Travel.Services.Trips.TripModel'
+            text/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Travel.Services.Trips.TripModel'
+  /v1/Trip/publicated:
+    get:
+      tags:
+        - Trip
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Travel.Services.Trips.PublicatedTripModel'
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Travel.Services.Trips.PublicatedTripModel'
+            text/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Travel.Services.Trips.PublicatedTripModel'
+components:
+  schemas:
+    Travel.API.Controllers.LoginRequest:
+      type: object
+      properties:
+        username:
+          type: string
+        password:
+          type: string
+      additionalProperties: false
+    Travel.Services.Activities.ActivityModel:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        dayId:
+          type: string
+          format: uuid
+        dayNumber:
+          type: integer
+          format: int32
+        title:
+          type: string
+        fromSearch:
+          type: boolean
+        categoryId:
+          type: string
+          format: uuid
+        categoryTitle:
+          type: string
+        pricePerOne:
+          type: integer
+          format: int32
+        totalPrice:
+          type: integer
+          format: int32
+        payerId:
+          type: string
+          format: uuid
+        payerName:
+          type: string
+        participants:
+          type: array
+          items:
+            type: string
+      additionalProperties: false
+    Travel.Services.Activities.CreateModel:
+      type: object
+      properties:
+        dayId:
+          type: string
+          format: uuid
+        title:
+          type: string
+        fromSearch:
+          type: boolean
+        categoryId:
+          type: string
+          format: uuid
+        categoryTitle:
+          type: string
+        pricePerOne:
+          type: integer
+          format: int32
+        totalPrice:
+          type: integer
+          format: int32
+        payerId:
+          type: string
+          format: uuid
+      additionalProperties: false
+    Travel.Services.Activities.UpdateModel:
+      type: object
+      properties:
+        title:
+          type: string
+        pricePerOne:
+          type: integer
+          format: int32
+        totalPrice:
+          type: integer
+          format: int32
+        payerId:
+          type: string
+          format: uuid
+      additionalProperties: false
+    Travel.Services.Trips.CreateModel:
+      type: object
+      properties:
+        creatorId:
+          type: string
+          format: uuid
+        title:
+          type: string
+        numOfParticipants:
+          type: integer
+          format: int32
+        dateStart:
+          type: string
+        dateEnd:
+          type: string
+        city:
+          type: string
+        hotelTitle:
+          type: string
+        isPublicated:
+          type: boolean
+      additionalProperties: false
+    Travel.Services.Trips.PublicatedTripModel:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        creatorName:
+          type: string
+        title:
+          type: string
+        dateStart:
+          type: string
+        dateEnd:
+          type: string
+        city:
+          type: string
+        isPublicated:
+          type: boolean
+        days:
+          type: array
+          items:
+            type: string
+      additionalProperties: false
+    Travel.Services.Trips.TripModel:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        creatorId:
+          type: string
+          format: uuid
+        creatorName:
+          type: string
+        title:
+          type: string
+        numOfParticipants:
+          type: integer
+          format: int32
+        dateStart:
+          type: string
+        dateEnd:
+          type: string
+        city:
+          type: string
+        hotelTitle:
+          type: string
+        isPublicated:
+          type: boolean
+        participants:
+          type: array
+          items:
+            type: string
+        days:
+          type: array
+          items:
+            type: string
+      additionalProperties: false
+    Travel.Services.Trips.UpdateModel:
+      type: object
+      properties:
+        title:
+          type: string
+        numOfParticipants:
+          type: integer
+          format: int32
+        dateStart:
+          type: string
+        dateEnd:
+          type: string
+        city:
+          type: string
+        hotelTitle:
+          type: string
+        isPublicated:
+          type: boolean
+      additionalProperties: false
+    Travel.Services.UserAccount.ChangeUserStatusModel:
+      type: object
+      properties:
+        newStatus:
+          enum:
+            - 0
+            - 1
+            - 2
+          type: integer
+          format: int32
+      additionalProperties: false
+    Travel.Services.UserAccount.UserAccountModel:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        name:
+          type: string
+        email:
+          type: string
+      additionalProperties: false
+  securitySchemes:
+    oauth2:
+      type: oauth2
+      flows:
+        password:
+          tokenUrl: http://host.docker.internal:10001/connect/token
+          scopes:
+            trips_read: Read
+            trips_write: Write
+        clientCredentials:
+          tokenUrl: http://host.docker.internal:10001/connect/token
+          scopes:
+            trips_read: Read
+            trips_write: Write
+security:
+  - oauth2: [ ]
