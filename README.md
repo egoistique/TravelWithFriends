@@ -12,6 +12,11 @@
 
 Сервис для планирования и учета путешествий с друзьями, включая разделение расходов, маршруты и жилье.
 
+## <span style="font-size:larger;">Аттестация 2: </span>
+- [Видеопрезентация](https://youtu.be/3s0U6GF04ig)
+- [Презентация pptx](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Презентация2аттестация.pptx) 
+- [Презентация pdf](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Презентация2аттестация.pdf) 
+
 ## <span style="font-size:larger;">Сервисы: </span>
 - [YouTrack](https://triptogether.youtrack.cloud/agiles/159-2/current)
 - [Miro](https://miro.com/app/board/uXjVNKQcULM=/)
