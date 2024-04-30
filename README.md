@@ -18,6 +18,7 @@
 - [Презентация pdf](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Презентация2аттестация.pdf)
 - [Курсовой проект pdf](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Курсовой%20Проект.pdf)
 - [Курсовой проект docx](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Курсовой%20Проект.docx)
+- [Swagger docs](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/swagger_docs_api.yaml)
 
 ## <span style="font-size:larger;">Сервисы: </span>
 - [YouTrack](https://triptogether.youtrack.cloud/agiles/159-2/current)
