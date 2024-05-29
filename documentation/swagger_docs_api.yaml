@@ -7,6 +7,8 @@ paths:
     post:
       tags:
         - Accounts
+      summary: Register user
+      description: ''
       parameters:
         - name: name
           in: query
@@ -37,6 +39,8 @@ paths:
     put:
       tags:
         - Accounts
+      summary: Change user status
+      description: ''
       parameters:
         - name: userId
           in: path
@@ -61,6 +65,8 @@ paths:
     get:
       tags:
         - Accounts
+      summary: Get status
+      description: ''
       parameters:
         - name: userId
           in: path
@@ -71,10 +77,27 @@ paths:
       responses:
         '200':
           description: Success
+  '/v1/Accounts/getid/{email}':
+    get:
+      tags:
+        - Accounts
+      summary: Get user id
+      description: ''
+      parameters:
+        - name: email
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Success
   /v1/Activity:
     get:
       tags:
         - Activity
+      summary: Get all activities
+      description: ''
       responses:
         '200':
           description: Success
@@ -97,6 +120,8 @@ paths:
     post:
       tags:
         - Activity
+      summary: Create activitiy
+      description: ''
       requestBody:
         content:
           application/json:
@@ -125,6 +150,8 @@ paths:
     get:
       tags:
         - Activity
+      summary: Get activitiy by id
+      description: ''
       parameters:
         - name: id
           in: path
@@ -138,6 +165,8 @@ paths:
     put:
       tags:
         - Activity
+      summary: Update activitiy
+      description: ''
       parameters:
         - name: id
           in: path
@@ -162,6 +191,8 @@ paths:
     delete:
       tags:
         - Activity
+      summary: Delete activitiy
+      description: ''
       parameters:
         - name: id
           in: path
@@ -172,12 +203,14 @@ paths:
       responses:
         '200':
           description: Success
-  '/v1/Activity/trip/{tripId}':
+  '/v1/Activity/day/{dayId}':
     get:
       tags:
         - Activity
+      summary: Get activitiy by day id
+      description: ''
       parameters:
-        - name: tripId
+        - name: dayId
           in: path
           required: true
           schema:
@@ -206,6 +239,8 @@ paths:
     post:
       tags:
         - Auth
+      summary: Authorization
+      description: ''
       requestBody:
         content:
           application/json:
@@ -220,10 +255,84 @@ paths:
       responses:
         '200':
           description: Success
+  /v1/Category:
+    get:
+      tags:
+        - Category
+      summary: Get all categories
+      description: ''
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Travel.Services.Categories.CategoryModel'
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Travel.Services.Categories.CategoryModel'
+            text/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Travel.Services.Categories.CategoryModel'
+  '/v1/Category/{id}':
+    get:
+      tags:
+        - Category
+      summary: Get category by id
+      description: ''
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: Success
+    delete:
+      tags:
+        - Category
+      summary: Delete category
+      description: ''
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: Success
+  '/v1/Statistics/{id}':
+    get:
+      tags:
+        - Statistics
+      summary: Get statistics
+      description: ''
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: Success
   /v1/Trip:
     get:
       tags:
         - Trip
+      summary: 'Get all trips '
+      description: Returns all trips
       responses:
         '200':
           description: Success
@@ -246,6 +355,8 @@ paths:
     post:
       tags:
         - Trip
+      summary: Create a new trip
+      description: Creates a new trip.
       requestBody:
         content:
           application/json:
@@ -258,8 +369,8 @@ paths:
             schema:
               $ref: '#/components/schemas/Travel.Services.Trips.CreateModel'
       responses:
-        '200':
-          description: Success
+        '201':
+          description: Returns the created trip.
           content:
             text/plain:
               schema:
@@ -270,10 +381,14 @@ paths:
             text/json:
               schema:
                 $ref: '#/components/schemas/Travel.Services.Trips.TripModel'
+        '400':
+          description: Invalid input parameters.
   '/v1/Trip/{id}':
     get:
       tags:
         - Trip
+      summary: Get trip by ID
+      description: Returns a trip by its unique identifier.
       parameters:
         - name: id
           in: path
@@ -287,6 +402,8 @@ paths:
     put:
       tags:
         - Trip
+      summary: Update trip by trip ID
+      description: ''
       parameters:
         - name: id
           in: path
@@ -311,6 +428,8 @@ paths:
     delete:
       tags:
         - Trip
+      summary: Delete trip by trip ID
+      description: ''
       parameters:
         - name: id
           in: path
@@ -325,6 +444,8 @@ paths:
     get:
       tags:
         - Trip
+      summary: Get trip by Creator ID
+      description: ''
       parameters:
         - name: creatorId
           in: path
@@ -355,6 +476,8 @@ paths:
     get:
       tags:
         - Trip
+      summary: Get publicated trips
+      description: ''
       responses:
         '200':
           description: Success
@@ -374,6 +497,90 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/Travel.Services.Trips.PublicatedTripModel'
+  '/v1/Trip/usertrips/{userEmail}':
+    get:
+      tags:
+        - Trip
+      summary: Get the trips in which the user is a member
+      description: User as a participant or creator
+      parameters:
+        - name: userEmail
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Travel.Services.Trips.TripModel'
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Travel.Services.Trips.TripModel'
+            text/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Travel.Services.Trips.TripModel'
+  '/v1/Trip/usertrips/{tripId}/addparticipant':
+    post:
+      tags:
+        - Trip
+      summary: Add a participant to the trip
+      description: ''
+      parameters:
+        - name: tripId
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: string
+          text/json:
+            schema:
+              type: string
+          application/*+json:
+            schema:
+              type: string
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/Travel.Services.Trips.TripModel'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Travel.Services.Trips.TripModel'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/Travel.Services.Trips.TripModel'
+  '/v1/Trip/getdays/{id}':
+    get:
+      tags:
+        - Trip
+      summary: Get trip days by trip ID
+      description: ''
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: Success
 components:
   schemas:
     Travel.API.Controllers.LoginRequest:
@@ -411,15 +618,16 @@ components:
         totalPrice:
           type: integer
           format: int32
-        payerId:
-          type: string
-          format: uuid
-        payerName:
-          type: string
+        payers:
+          type: array
+          items:
+            type: string
+          nullable: true
         participants:
           type: array
           items:
             type: string
+          nullable: true
       additionalProperties: false
     Travel.Services.Activities.CreateModel:
       type: object
@@ -434,32 +642,52 @@ components:
         categoryId:
           type: string
           format: uuid
-        categoryTitle:
-          type: string
         pricePerOne:
           type: integer
           format: int32
         totalPrice:
           type: integer
           format: int32
-        payerId:
-          type: string
-          format: uuid
+        participants:
+          type: array
+          items:
+            type: string
+        payers:
+          type: array
+          items:
+            type: string
       additionalProperties: false
     Travel.Services.Activities.UpdateModel:
       type: object
       properties:
         title:
           type: string
+        categoryId:
+          type: string
+          format: uuid
         pricePerOne:
           type: integer
           format: int32
         totalPrice:
           type: integer
           format: int32
-        payerId:
+        participants:
+          type: array
+          items:
+            type: string
+        payers:
+          type: array
+          items:
+            type: string
+      additionalProperties: false
+    Travel.Services.Categories.CategoryModel:
+      type: object
+      properties:
+        id:
           type: string
           format: uuid
+        title:
+          type: string
       additionalProperties: false
     Travel.Services.Trips.CreateModel:
       type: object
@@ -540,6 +768,8 @@ components:
           type: array
           items:
             type: string
+        errorMessage:
+          type: string
       additionalProperties: false
     Travel.Services.Trips.UpdateModel:
       type: object
@@ -587,12 +817,12 @@ components:
       type: oauth2
       flows:
         password:
-          tokenUrl: http://host.docker.internal:10001/connect/token
+          tokenUrl: https://localhost:7255/connect/token
           scopes:
             trips_read: Read
             trips_write: Write
         clientCredentials:
-          tokenUrl: http://host.docker.internal:10001/connect/token
+          tokenUrl: https://localhost:7255/connect/token
           scopes:
             trips_read: Read
             trips_write: Write

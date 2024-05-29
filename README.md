@@ -12,6 +12,17 @@
 
 Сервис для планирования и учета путешествий с друзьями, включая разделение расходов, маршруты и жилье.
 
+## <span style="font-size:larger;">Аттестация 3: </span>
+- [Видеообзор бекенда](https://youtu.be/lFWrIwzohBg)
+- [Видеообзор фронтенда]()
+- [Презентация pptx]() 
+- [Презентация pdf]()
+- [Курсовой проект pdf]()
+- [Курсовой проект docx]()
+- [Swagger docs yaml](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/swagger_docs_api.yaml)
+- [Swagger hub](https://app.swaggerhub.com/apis/kirakirillova762/travel-wf_api/Product1#/)
+
+
 ## <span style="font-size:larger;">Аттестация 2: </span>
 - [Видеопрезентация](https://youtu.be/3s0U6GF04ig)
 - [Презентация pptx](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Презентация2аттестация.pptx) 
