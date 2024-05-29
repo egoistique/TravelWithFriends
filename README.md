@@ -14,7 +14,7 @@
 
 ## <span style="font-size:larger;">Аттестация 3: </span>
 - [Видеообзор бекенда](https://youtu.be/lFWrIwzohBg)
-- [Видеообзор фронтенда]()
+- [Видеообзор фронтенда](https://youtu.be/l7pm0ZMj8qk)
 - [Презентация pptx]() 
 - [Презентация pdf]()
 - [Курсовой проект pdf]()
