@@ -4,9 +4,9 @@
 
 ## <span style="font-size:larger;">Студенты</span>
 
-- [Екатерина Воронежская](https://github.com/egoistique)  - Тимлид, Back-end разработчик
+- [Екатерина Воронежская](https://github.com/egoistique)  - Тимлид, Fullstack разработчик
 - [Валерий Деревянко](https://github.com/VaL1y)  - Аналитик, технический писатель
-- [Максим Бондарев](https://github.com/bdybgs) - Front-end разработчик, тестировщик
+- [Максим Бондарев](https://github.com/bdybgs) - Frontend разработчик, тестировщик
 
 ## <span style="font-size:larger;">Тема: </span>
 
@@ -44,13 +44,13 @@
 
 Администратор:
 
-Логин: admin@travelwf.com
-Пароль: pass1234
+Логин: admin@travelwf.com  
+Пароль: pass1234  
 
 Пользователь:
 
-Логин: user@travelwf.com
-Пароль: 123456
+Логин: user@travelwf.com  
+Пароль: 123456  
 
 
 ## <span style="font-size:larger;">Инструкция для запуска: </span>
@@ -59,13 +59,13 @@
 Запуск Backend:  
 Необходимо установить папку с серверной частью кода, открыть решение в ide, запустить 2 проекта: Travel.Api и Travel.Identity. Убедиться, что в docker есть контейнер с PostgreSQL.
 
-Альтернативный вариант: 
+Альтернативный вариант:   
 Находясь в корневом каталоге проекта в cmd прописать команды:
 1. docker-compose build
 2. docker-compose up
 После чего в docker появятся 3 контейнера.
 Api будет доступен по адресу http://localhost:10000
 
-Запуск Frontend: 
+Запуск Frontend:   
 Необходимо скачать архив с клиентской частью кода, выгрузить его в отдельную папку, открыть командную строку, дойти до расположения папки созданной папки и прописать команду 'npm start'.
 
