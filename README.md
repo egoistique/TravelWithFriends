@@ -1,5 +1,5 @@
 # Веб-приложение TravelWithFriends
-- [Сервис для планирования и учета путешествий с друзьями, включая разделение расходов, маршруты и жилье.](https://travel-with-friends.ru) 
+[Сервис для планирования и учета путешествий с друзьями, включая разделение расходов, маршруты и жилье.](https://travel-with-friends.ru) 
 
 ## <span style="font-size:larger;">Команда 7-6</span>
 
@@ -33,7 +33,7 @@
 
 ## <span style="font-size:larger;">Аналитика приложения: </span>
 
-- [Яндекс Метрика](https://metrika.yandex.ru/dashboard?id=97428533)
+[Яндекс Метрика](https://metrika.yandex.ru/dashboard?id=97428533)
 
 ## <span style="font-size:larger;">Тестовые данные для входа в приложение: </span>
 
@@ -57,7 +57,7 @@
 Альтернативный вариант:   
 Находясь в корневом каталоге проекта в cmd прописать команды:
 1. docker-compose build
-2. docker-compose up
+2. docker-compose up  
 После чего в docker появятся 3 контейнера.
 Api будет доступен по адресу http://localhost:10000
 
