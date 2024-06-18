@@ -1,16 +1,11 @@
 # Веб-приложение TravelWithFriends
+- [Сервис для планирования и учета путешествий с друзьями, включая разделение расходов, маршруты и жилье.](https://travel-with-friends.ru) 
 
-# ТП-7-6
-
-## <span style="font-size:larger;">Студенты</span>
+## <span style="font-size:larger;">Команда 7-6</span>
 
 - [Екатерина Воронежская](https://github.com/egoistique)  - Тимлид, Fullstack разработчик
 - [Валерий Деревянко](https://github.com/VaL1y)  - Аналитик, технический писатель
 - [Максим Бондарев](https://github.com/bdybgs) - Frontend разработчик, тестировщик
-
-## <span style="font-size:larger;">Тема: </span>
-
-Сервис для планирования и учета путешествий с друзьями, включая разделение расходов, маршруты и жилье.
 
 ## <span style="font-size:larger;">Код программы: </span>
 - [Backend](https://github.com/egoistique/TravelWithFriends_backend) 
