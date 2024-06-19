@@ -37,6 +37,8 @@
 
 ## <span style="font-size:larger;">Тестовые данные для входа в приложение: </span>
 
+[Ссылка на сайт](https://travel-with-friends.ru)   
+
 Администратор:
 
 Логин: admin@travelwf.com  
