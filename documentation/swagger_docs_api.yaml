@@ -8,7 +8,7 @@ paths:
       tags:
         - Accounts
       summary: Register user
-      description: ''
+      description: Registers a new user account with the provided details.
       parameters:
         - name: name
           in: query
@@ -35,20 +35,34 @@ paths:
             text/json:
               schema:
                 $ref: '#/components/schemas/Travel.Services.UserAccount.UserAccountModel'
+        '400':
+          description: Bad Request
+          content:
+            text/plain:
+              schema:
+                type: string
+            application/json:
+              schema:
+                type: string
+            text/json:
+              schema:
+                type: string
   '/v1/Accounts/status/{userId}':
     put:
       tags:
         - Accounts
       summary: Change user status
-      description: ''
+      description: Changes the status of an existing user.
       parameters:
         - name: userId
           in: path
+          description: The ID of the user whose status is to be changed.
           required: true
           schema:
             type: string
             format: uuid
       requestBody:
+        description: The new status details.
         content:
           application/json:
             schema:
@@ -62,14 +76,49 @@ paths:
       responses:
         '200':
           description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+            application/json:
+              schema:
+                type: string
+            text/json:
+              schema:
+                type: string
+        '400':
+          description: Bad Request
+          content:
+            text/plain:
+              schema:
+                type: string
+            application/json:
+              schema:
+                type: string
+            text/json:
+              schema:
+                type: string
+        '404':
+          description: Not Found
+          content:
+            text/plain:
+              schema:
+                type: string
+            application/json:
+              schema:
+                type: string
+            text/json:
+              schema:
+                type: string
     get:
       tags:
         - Accounts
       summary: Get status
-      description: ''
+      description: Retrieves the current status of the specified user.
       parameters:
         - name: userId
           in: path
+          description: The ID of the user whose status is to be retrieved.
           required: true
           schema:
             type: string
@@ -77,27 +126,149 @@ paths:
       responses:
         '200':
           description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+            application/json:
+              schema:
+                type: string
+            text/json:
+              schema:
+                type: string
+        '400':
+          description: Bad Request
+          content:
+            text/plain:
+              schema:
+                type: string
+            application/json:
+              schema:
+                type: string
+            text/json:
+              schema:
+                type: string
+        '404':
+          description: Not Found
+          content:
+            text/plain:
+              schema:
+                type: string
+            application/json:
+              schema:
+                type: string
+            text/json:
+              schema:
+                type: string
   '/v1/Accounts/getid/{email}':
     get:
       tags:
         - Accounts
       summary: Get user id
-      description: ''
+      description: Retrieves the user ID by the provided email address.
       parameters:
         - name: email
           in: path
+          description: The email address of the user.
           required: true
           schema:
             type: string
       responses:
         '200':
           description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+                format: uuid
+            application/json:
+              schema:
+                type: string
+                format: uuid
+            text/json:
+              schema:
+                type: string
+                format: uuid
+        '400':
+          description: Bad Request
+          content:
+            text/plain:
+              schema:
+                type: string
+            application/json:
+              schema:
+                type: string
+            text/json:
+              schema:
+                type: string
+        '404':
+          description: Not Found
+          content:
+            text/plain:
+              schema:
+                type: string
+            application/json:
+              schema:
+                type: string
+            text/json:
+              schema:
+                type: string
+  '/v1/Accounts/{email}':
+    delete:
+      tags:
+        - Accounts
+      summary: Delete user
+      description: Deletes a user if they have no trips or only trips with a single participant.
+      parameters:
+        - name: email
+          in: path
+          description: The email address of the user to delete.
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+            application/json:
+              schema:
+                type: string
+            text/json:
+              schema:
+                type: string
+        '400':
+          description: Bad Request
+          content:
+            text/plain:
+              schema:
+                type: string
+            application/json:
+              schema:
+                type: string
+            text/json:
+              schema:
+                type: string
+        '404':
+          description: Not Found
+          content:
+            text/plain:
+              schema:
+                type: string
+            application/json:
+              schema:
+                type: string
+            text/json:
+              schema:
+                type: string
   /v1/Activity:
     get:
       tags:
         - Activity
       summary: Get all activities
-      description: ''
+      description: Retrieves all activities.
       responses:
         '200':
           description: Success
@@ -117,12 +288,49 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/Travel.Services.Activities.ActivityModel'
+        '400':
+          description: Bad Request
+          content:
+            text/plain:
+              schema:
+                type: string
+            application/json:
+              schema:
+                type: string
+            text/json:
+              schema:
+                type: string
+        '401':
+          description: Unauthorized
+          content:
+            text/plain:
+              schema:
+                type: string
+            application/json:
+              schema:
+                type: string
+            text/json:
+              schema:
+                type: string
+        '404':
+          description: Not Found
+          content:
+            text/plain:
+              schema:
+                type: string
+            application/json:
+              schema:
+                type: string
+            text/json:
+              schema:
+                type: string
     post:
       tags:
         - Activity
-      summary: Create activitiy
-      description: ''
+      summary: Create activity
+      description: Creates a new activity with the provided details.
       requestBody:
+        description: The create model request.
         content:
           application/json:
             schema:
@@ -146,15 +354,40 @@ paths:
             text/json:
               schema:
                 $ref: '#/components/schemas/Travel.Services.Activities.ActivityModel'
+        '400':
+          description: Bad Request
+          content:
+            text/plain:
+              schema:
+                type: string
+            application/json:
+              schema:
+                type: string
+            text/json:
+              schema:
+                type: string
+        '401':
+          description: Unauthorized
+          content:
+            text/plain:
+              schema:
+                type: string
+            application/json:
+              schema:
+                type: string
+            text/json:
+              schema:
+                type: string
   '/v1/Activity/{id}':
     get:
       tags:
         - Activity
-      summary: Get activitiy by id
-      description: ''
+      summary: Get activity by ID
+      description: Retrieves an activity by its ID.
       parameters:
         - name: id
           in: path
+          description: The activity ID.
           required: true
           schema:
             type: string
@@ -162,19 +395,67 @@ paths:
       responses:
         '200':
           description: Success
+          content:
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/Travel.Services.Activities.ActivityModel'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Travel.Services.Activities.ActivityModel'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/Travel.Services.Activities.ActivityModel'
+        '400':
+          description: Bad Request
+          content:
+            text/plain:
+              schema:
+                type: string
+            application/json:
+              schema:
+                type: string
+            text/json:
+              schema:
+                type: string
+        '401':
+          description: Unauthorized
+          content:
+            text/plain:
+              schema:
+                type: string
+            application/json:
+              schema:
+                type: string
+            text/json:
+              schema:
+                type: string
+        '404':
+          description: Not Found
+          content:
+            text/plain:
+              schema:
+                type: string
+            application/json:
+              schema:
+                type: string
+            text/json:
+              schema:
+                type: string
     put:
       tags:
         - Activity
-      summary: Update activitiy
-      description: ''
+      summary: Update activity
+      description: Updates an existing activity with the provided details.
       parameters:
         - name: id
           in: path
+          description: The activity ID.
           required: true
           schema:
             type: string
             format: uuid
       requestBody:
+        description: The update model request.
         content:
           application/json:
             schema:
@@ -188,14 +469,51 @@ paths:
       responses:
         '200':
           description: Success
+        '400':
+          description: Bad Request
+          content:
+            text/plain:
+              schema:
+                type: string
+            application/json:
+              schema:
+                type: string
+            text/json:
+              schema:
+                type: string
+        '401':
+          description: Unauthorized
+          content:
+            text/plain:
+              schema:
+                type: string
+            application/json:
+              schema:
+                type: string
+            text/json:
+              schema:
+                type: string
+        '404':
+          description: Not Found
+          content:
+            text/plain:
+              schema:
+                type: string
+            application/json:
+              schema:
+                type: string
+            text/json:
+              schema:
+                type: string
     delete:
       tags:
         - Activity
-      summary: Delete activitiy
-      description: ''
+      summary: Delete activity
+      description: Deletes an activity by its ID.
       parameters:
         - name: id
           in: path
+          description: The activity ID.
           required: true
           schema:
             type: string
@@ -203,15 +521,52 @@ paths:
       responses:
         '200':
           description: Success
+        '400':
+          description: Bad Request
+          content:
+            text/plain:
+              schema:
+                type: string
+            application/json:
+              schema:
+                type: string
+            text/json:
+              schema:
+                type: string
+        '401':
+          description: Unauthorized
+          content:
+            text/plain:
+              schema:
+                type: string
+            application/json:
+              schema:
+                type: string
+            text/json:
+              schema:
+                type: string
+        '404':
+          description: Not Found
+          content:
+            text/plain:
+              schema:
+                type: string
+            application/json:
+              schema:
+                type: string
+            text/json:
+              schema:
+                type: string
   '/v1/Activity/day/{dayId}':
     get:
       tags:
         - Activity
-      summary: Get activitiy by day id
-      description: ''
+      summary: Get activities by day ID
+      description: Retrieves activities by day ID.
       parameters:
         - name: dayId
           in: path
+          description: The day ID.
           required: true
           schema:
             type: string
@@ -235,13 +590,50 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/Travel.Services.Activities.ActivityModel'
+        '400':
+          description: Bad Request
+          content:
+            text/plain:
+              schema:
+                type: string
+            application/json:
+              schema:
+                type: string
+            text/json:
+              schema:
+                type: string
+        '401':
+          description: Unauthorized
+          content:
+            text/plain:
+              schema:
+                type: string
+            application/json:
+              schema:
+                type: string
+            text/json:
+              schema:
+                type: string
+        '404':
+          description: Not Found
+          content:
+            text/plain:
+              schema:
+                type: string
+            application/json:
+              schema:
+                type: string
+            text/json:
+              schema:
+                type: string
   /v1/Auth:
     post:
       tags:
         - Auth
-      summary: Authorization
-      description: ''
+      summary: Authorize user
+      description: Authenticates a user and returns an access token.
       requestBody:
+        description: The login request model containing username and password.
         content:
           application/json:
             schema:
@@ -255,12 +647,58 @@ paths:
       responses:
         '200':
           description: Success
+          content:
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/Travel.API.Controllers.AuthResult'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Travel.API.Controllers.AuthResult'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/Travel.API.Controllers.AuthResult'
+        '400':
+          description: Bad Request
+          content:
+            text/plain:
+              schema:
+                type: string
+            application/json:
+              schema:
+                type: string
+            text/json:
+              schema:
+                type: string
+        '401':
+          description: Unauthorized
+          content:
+            text/plain:
+              schema:
+                type: string
+            application/json:
+              schema:
+                type: string
+            text/json:
+              schema:
+                type: string
+        '500':
+          description: Internal Server Error
+          content:
+            text/plain:
+              schema:
+                type: string
+            application/json:
+              schema:
+                type: string
+            text/json:
+              schema:
+                type: string
   /v1/Category:
     get:
       tags:
         - Category
       summary: Get all categories
-      description: ''
+      description: Retrieves all categories.
       responses:
         '200':
           description: Success
@@ -280,15 +718,52 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/Travel.Services.Categories.CategoryModel'
+        '400':
+          description: Bad Request
+          content:
+            text/plain:
+              schema:
+                type: string
+            application/json:
+              schema:
+                type: string
+            text/json:
+              schema:
+                type: string
+        '401':
+          description: Unauthorized
+          content:
+            text/plain:
+              schema:
+                type: string
+            application/json:
+              schema:
+                type: string
+            text/json:
+              schema:
+                type: string
+        '404':
+          description: Not Found
+          content:
+            text/plain:
+              schema:
+                type: string
+            application/json:
+              schema:
+                type: string
+            text/json:
+              schema:
+                type: string
   '/v1/Category/{id}':
     get:
       tags:
         - Category
       summary: Get category by id
-      description: ''
+      description: Retrieves a category by its ID.
       parameters:
         - name: id
           in: path
+          description: The category ID.
           required: true
           schema:
             type: string
@@ -296,30 +771,114 @@ paths:
       responses:
         '200':
           description: Success
+          content:
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/Travel.Services.Categories.CategoryModel'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Travel.Services.Categories.CategoryModel'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/Travel.Services.Categories.CategoryModel'
+        '400':
+          description: Bad Request
+          content:
+            text/plain:
+              schema:
+                type: string
+            application/json:
+              schema:
+                type: string
+            text/json:
+              schema:
+                type: string
+        '401':
+          description: Unauthorized
+          content:
+            text/plain:
+              schema:
+                type: string
+            application/json:
+              schema:
+                type: string
+            text/json:
+              schema:
+                type: string
+        '404':
+          description: Not Found
+          content:
+            text/plain:
+              schema:
+                type: string
+            application/json:
+              schema:
+                type: string
+            text/json:
+              schema:
+                type: string
     delete:
       tags:
         - Category
       summary: Delete category
-      description: ''
+      description: Deletes a category by its ID.
       parameters:
         - name: id
           in: path
+          description: The category ID.
           required: true
           schema:
             type: string
             format: uuid
       responses:
-        '200':
-          description: Success
+        '204':
+          description: No Content
+        '400':
+          description: Bad Request
+          content:
+            text/plain:
+              schema:
+                type: string
+            application/json:
+              schema:
+                type: string
+            text/json:
+              schema:
+                type: string
+        '401':
+          description: Unauthorized
+          content:
+            text/plain:
+              schema:
+                type: string
+            application/json:
+              schema:
+                type: string
+            text/json:
+              schema:
+                type: string
+        '404':
+          description: Not Found
+          content:
+            text/plain:
+              schema:
+                type: string
+            application/json:
+              schema:
+                type: string
+            text/json:
+              schema:
+                type: string
   '/v1/Statistics/{id}':
     get:
       tags:
         - Statistics
       summary: Get statistics
-      description: ''
+      description: Retrieves statistics by its ID.
       parameters:
         - name: id
           in: path
+          description: The statistics ID.
           required: true
           schema:
             type: string
@@ -327,12 +886,58 @@ paths:
       responses:
         '200':
           description: Success
+          content:
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/Travel.Services.Statistics.StatisticsModel'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Travel.Services.Statistics.StatisticsModel'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/Travel.Services.Statistics.StatisticsModel'
+        '400':
+          description: Bad Request
+          content:
+            text/plain:
+              schema:
+                type: string
+            application/json:
+              schema:
+                type: string
+            text/json:
+              schema:
+                type: string
+        '401':
+          description: Unauthorized
+          content:
+            text/plain:
+              schema:
+                type: string
+            application/json:
+              schema:
+                type: string
+            text/json:
+              schema:
+                type: string
+        '404':
+          description: Not Found
+          content:
+            text/plain:
+              schema:
+                type: string
+            application/json:
+              schema:
+                type: string
+            text/json:
+              schema:
+                type: string
   /v1/Trip:
     get:
       tags:
         - Trip
-      summary: 'Get all trips '
-      description: Returns all trips
+      summary: Get all trips
+      description: Returns all trips.
       responses:
         '200':
           description: Success
@@ -352,12 +957,17 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/Travel.Services.Trips.TripModel'
+        '401':
+          description: Unauthorized
+        '500':
+          description: Internal server error
     post:
       tags:
         - Trip
       summary: Create a new trip
       description: Creates a new trip.
       requestBody:
+        description: The create model request.
         content:
           application/json:
             schema:
@@ -383,6 +993,10 @@ paths:
                 $ref: '#/components/schemas/Travel.Services.Trips.TripModel'
         '400':
           description: Invalid input parameters.
+        '401':
+          description: Unauthorized
+        '500':
+          description: Internal server error
   '/v1/Trip/{id}':
     get:
       tags:
@@ -392,6 +1006,7 @@ paths:
       parameters:
         - name: id
           in: path
+          description: The trip ID.
           required: true
           schema:
             type: string
@@ -399,19 +1014,37 @@ paths:
       responses:
         '200':
           description: Success
+          content:
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/Travel.Services.Trips.TripModel'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Travel.Services.Trips.TripModel'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/Travel.Services.Trips.TripModel'
+        '404':
+          description: Not Found
+        '401':
+          description: Unauthorized
+        '500':
+          description: Internal server error
     put:
       tags:
         - Trip
       summary: Update trip by trip ID
-      description: ''
+      description: Updates an existing trip by its unique identifier.
       parameters:
         - name: id
           in: path
+          description: The trip ID.
           required: true
           schema:
             type: string
             format: uuid
       requestBody:
+        description: The update model request.
         content:
           application/json:
             schema:
@@ -425,14 +1058,23 @@ paths:
       responses:
         '200':
           description: Success
+        '400':
+          description: Invalid input parameters.
+        '401':
+          description: Unauthorized
+        '404':
+          description: Not Found
+        '500':
+          description: Internal server error
     delete:
       tags:
         - Trip
       summary: Delete trip by trip ID
-      description: ''
+      description: Deletes a trip by its unique identifier.
       parameters:
         - name: id
           in: path
+          description: The trip ID.
           required: true
           schema:
             type: string
@@ -440,15 +1082,22 @@ paths:
       responses:
         '200':
           description: Success
+        '401':
+          description: Unauthorized
+        '404':
+          description: Not Found
+        '500':
+          description: Internal server error
   '/v1/Trip/creator/{creatorId}':
     get:
       tags:
         - Trip
-      summary: Get trip by Creator ID
-      description: ''
+      summary: Get trips by Creator ID
+      description: Returns trips by the creator's unique identifier.
       parameters:
         - name: creatorId
           in: path
+          description: The creator ID.
           required: true
           schema:
             type: string
@@ -472,12 +1121,18 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/Travel.Services.Trips.TripModel'
+        '401':
+          description: Unauthorized
+        '404':
+          description: Not Found
+        '500':
+          description: Internal server error
   /v1/Trip/publicated:
     get:
       tags:
         - Trip
       summary: Get publicated trips
-      description: ''
+      description: Returns all publicated trips.
       responses:
         '200':
           description: Success
@@ -497,15 +1152,22 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/Travel.Services.Trips.PublicatedTripModel'
+        '401':
+          description: Unauthorized
+        '404':
+          description: Not Found
+        '500':
+          description: Internal server error
   '/v1/Trip/usertrips/{userEmail}':
     get:
       tags:
         - Trip
       summary: Get the trips in which the user is a member
-      description: User as a participant or creator
+      description: Returns trips where the user is a participant or creator.
       parameters:
         - name: userEmail
           in: path
+          description: The user's email.
           required: true
           schema:
             type: string
@@ -528,20 +1190,28 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/Travel.Services.Trips.TripModel'
+        '401':
+          description: Unauthorized
+        '404':
+          description: Not Found
+        '500':
+          description: Internal server error
   '/v1/Trip/usertrips/{tripId}/addparticipant':
     post:
       tags:
         - Trip
       summary: Add a participant to the trip
-      description: ''
+      description: Adds a participant to the trip.
       parameters:
         - name: tripId
           in: path
+          description: The trip ID.
           required: true
           schema:
             type: string
             format: uuid
       requestBody:
+        description: The email of the user to add as a participant.
         content:
           application/json:
             schema:
@@ -565,15 +1235,22 @@ paths:
             text/json:
               schema:
                 $ref: '#/components/schemas/Travel.Services.Trips.TripModel'
+        '401':
+          description: Unauthorized
+        '404':
+          description: Not Found
+        '500':
+          description: Internal server error
   '/v1/Trip/getdays/{id}':
     get:
       tags:
         - Trip
       summary: Get trip days by trip ID
-      description: ''
+      description: Returns the days of the trip by its unique identifier.
       parameters:
         - name: id
           in: path
+          description: The trip ID.
           required: true
           schema:
             type: string
@@ -581,16 +1258,36 @@ paths:
       responses:
         '200':
           description: Success
+        '401':
+          description: Unauthorized
+        '404':
+          description: Not Found
+        '500':
+          description: Internal server error
 components:
   schemas:
+    Travel.API.Controllers.AuthResult:
+      type: object
+      properties:
+        isAdmin:
+          type: boolean
+          description: Indicates if the user is an admin.
+        accessToken:
+          type: string
+          description: The access token.
+      additionalProperties: false
+      description: Result of the authentication process.
     Travel.API.Controllers.LoginRequest:
       type: object
       properties:
         username:
           type: string
+          description: The user email.
         password:
           type: string
+          description: The password.
       additionalProperties: false
+      description: Model for login request.
     Travel.Services.Activities.ActivityModel:
       type: object
       properties:
@@ -688,6 +1385,27 @@ components:
           format: uuid
         title:
           type: string
+      additionalProperties: false
+    Travel.Services.Statistics.ChartData:
+      type: object
+      properties:
+        name:
+          type: string
+        value:
+          type: number
+          format: double
+      additionalProperties: false
+    Travel.Services.Statistics.StatisticsModel:
+      type: object
+      properties:
+        teamExpensesData:
+          type: array
+          items:
+            $ref: '#/components/schemas/Travel.Services.Statistics.ChartData'
+        categoryExpensesData:
+          type: array
+          items:
+            $ref: '#/components/schemas/Travel.Services.Statistics.ChartData'
       additionalProperties: false
     Travel.Services.Trips.CreateModel:
       type: object
@@ -817,12 +1535,12 @@ components:
       type: oauth2
       flows:
         password:
-          tokenUrl: https://localhost:7255/connect/token
+          tokenUrl: http://host.docker.internal:10001/connect/token
           scopes:
             trips_read: Read
             trips_write: Write
         clientCredentials:
-          tokenUrl: https://localhost:7255/connect/token
+          tokenUrl: http://host.docker.internal:10001/connect/token
           scopes:
             trips_read: Read
             trips_write: Write
