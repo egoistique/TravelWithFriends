@@ -29,7 +29,7 @@
 - [Курсовой проект pdf](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Курсовой%20Проект.pdf)
 - [Курсовой проект docx](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Курсовой%20Проект.docx)
 - [Swagger docs yaml](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/swagger_docs_api.yaml)
-- [Swagger hub](https://app.swaggerhub.com/apis/kirakirillova762/travel-wf_api/Product1#/)
+- [Swagger hub](https://app.swaggerhub.com/apis/kirakirillova762/travel-wf_api/TWF#/)
 
 ## <span style="font-size:larger;">Аналитика приложения: </span>
 
