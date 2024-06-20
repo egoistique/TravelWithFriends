@@ -36,7 +36,7 @@
 - [Видеообзор бекенда](https://youtu.be/lFWrIwzohBg)
 - [Видеообзор фронтенда](https://youtu.be/c4h8ct2C6JY)
 - [Видеообзор развертывания](https://youtu.be/3DBmakNYca0)
-- [Видеообзор сайта](https://youtu.be/pek8elOQlpE)
+- [Видеообзор сайта](https://youtu.be/-BXmDNZ0Vhk)
 
 # Инструкция по запуску веб-приложения
 
