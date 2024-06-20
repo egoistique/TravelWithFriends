@@ -29,7 +29,7 @@
 
 - Презентация ТЗ  [[pdf]](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Презентации%20проекта/Презентация%20ТЗ/Презентация_ТЗ.pdf) [[pptx]](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Презентации%20проекта/Презентация%20ТЗ/Презентация_ТЗ.pptx) 
 
-- Swagger [[docs yaml]](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/SwaggerAPI)
+- Swagger [[hub]](https://app.swaggerhub.com/apis/kirakirillova762/travel-wf_api/TWF#/) [[yaml]](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/SwaggerAPI)
 
 # Видеообзор веб-приложения
 - [Видеопрезентация](https://youtu.be/zmIHbz_8H18)
