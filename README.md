@@ -29,13 +29,14 @@
 - Подтверждение корректного оформления технического задания [[Docx]](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Техническое%20задание/Perechen_zadach_po_oformleniyu_tekhnicheskogo_zadania.docx) [[PDF]](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Техническое%20задание/Perechen_zadach_po_oformleniyu_tekhnicheskogo_zadania.docx)
 - Презентация ТЗ  [[pdf]](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Презентации%20проекта/Презентация%20ТЗ/Презентация_ТЗ.pdf) [[pptx]](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Презентации%20проекта/Презентация%20ТЗ/Презентация_ТЗ.pptx) 
 
-- Swagger [[docs yaml]](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/SwaggerAPI)
+- Swagger [[hub]](https://app.swaggerhub.com/apis/kirakirillova762/travel-wf_api/TWF#/) [[yaml]](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/SwaggerAPI)
 
 # Видеообзор веб-приложения
 - [Видеопрезентация](https://youtu.be/zmIHbz_8H18)
 - [Видеообзор бекенда](https://youtu.be/lFWrIwzohBg)
-- [Видеообзор фронтенда]()
-- [Видеообзор деплоя](https://youtu.be/3DBmakNYca0)
+- [Видеообзор фронтенда](https://youtu.be/c4h8ct2C6JY)
+- [Видеообзор развертывания](https://youtu.be/3DBmakNYca0)
+- [Видеообзор сайта](https://youtu.be/pek8elOQlpE)
 
 # Инструкция по запуску веб-приложения
 
@@ -54,7 +55,7 @@
 ## Инструкция по запуску веб-приложения со стороны разработчика
 
 Запуск Backend:  
-Необходимо установить папку с серверной частью кода, открыть решение в ide, запустить 2 проекта: Travel.Api и Travel.Identity. Убедиться, что в docker есть контейнер с PostgreSQL. <br />
+Необходимо установить папку с серверной частью кода, открыть решение в ide, запустить 2 проекта: Travel.Api и Travel.Identity. Убедиться, что в docker запущен контейнер с PostgreSQL. <br />
 
 Альтернативный вариант:   
 Находясь в корневом каталоге проекта в cmd прописать команды:
@@ -64,5 +65,5 @@
 Api будет доступен по адресу http://localhost:10000
 
 Запуск Frontend:   
-Необходимо скачать архив с клиентской частью кода, выгрузить его в отдельную папку, открыть командную строку, дойти до расположения папки созданной папки и прописать команду 'npm start'.
+Необходимо скачать архив с клиентской частью кода, выгрузить его в отдельную папку, открыть командную строку, дойти до расположения созданной папки и прописать команду 'npm start'.
 
