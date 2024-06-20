@@ -24,10 +24,12 @@
 # Документация
 - Курсовой проект [[docx]](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Курсовой%20проект/Курсовой%20Проект.docx) [[pdf]](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Курсовой%20проект/Курсовой%20Проект.pdf)
 - Презентация проекта [[pdf]](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Презентации%20проекта/Презентация%20продукта/Презентация.pdf) [[pptx]](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Презентации%20проекта/Презентация%20продукта/Презентация.pptx) 
-- [Сопроводительное письмо](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Сопроводительное%20письмо)
-- [Техническое задание](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Техническое%20задание)
-- [Презентация ТЗ](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Презентации%20проекта/Презентация%20ТЗ)
-- [Swagger docs yaml](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/SwaggerAPI)
+- Сопроводительное письмо [[docx]](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Сопроводительное%20письмо/Сопроводительное%20письмо.docx) [[pdf]](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Сопроводительное%20письмо/Сопроводительное%20письмо.pdf)
+- Техническое задание [[docx]](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Техническое%20задание/Техническое%20задание.docx) [[pdf]](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Техническое%20задание/Техническое%20задание.pdf)
+
+- Презентация ТЗ  [[pdf]](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Презентации%20проекта/Презентация%20ТЗ/Презентация_ТЗ.pdf) [[pptx]](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Презентации%20проекта/Презентация%20ТЗ/Презентация_ТЗ.pptx) 
+
+- Swagger [[docs yaml]](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/SwaggerAPI)
 
 # Видеообзор веб-приложения
 - [Видеопрезентация](https://youtu.be/zmIHbz_8H18)
