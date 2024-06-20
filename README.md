@@ -34,8 +34,9 @@
 # Видеообзор веб-приложения
 - [Видеопрезентация](https://youtu.be/zmIHbz_8H18)
 - [Видеообзор бекенда](https://youtu.be/lFWrIwzohBg)
-- [Видеообзор фронтенда]()
-- [Видеообзор деплоя](https://youtu.be/3DBmakNYca0)
+- [Видеообзор фронтенда](https://youtu.be/c4h8ct2C6JY)
+- [Видеообзор развертывания](https://youtu.be/3DBmakNYca0)
+- [Видеообзор сайта](https://youtu.be/pek8elOQlpE)
 
 # Инструкция по запуску веб-приложения
 
