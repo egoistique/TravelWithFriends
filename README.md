@@ -1,63 +1,58 @@
 # Веб-приложение TravelWithFriends
 [Сервис для планирования и учета путешествий с друзьями, включая разделение расходов, маршруты и жилье.](https://travel-with-friends.ru) 
 
-## <span style="font-size:larger;">Команда 7-6</span>
+# Команда 7-6
+1. [Екатерина Воронежская](https://github.com/egoistique)  - Тимлид, Fullstack разработчик <br />
+2. [Валерий Деревянко](https://github.com/VaL1y)  - Аналитик, технический писатель <br />
+3. [Максим Бондарев](https://github.com/bdybgs) - Frontend разработчик, тестировщик <br />
 
-- [Екатерина Воронежская](https://github.com/egoistique)  - Тимлид, Fullstack разработчик
-- [Валерий Деревянко](https://github.com/VaL1y)  - Аналитик, технический писатель
-- [Максим Бондарев](https://github.com/bdybgs) - Frontend разработчик, тестировщик
+# Код программы 
+[Backend](https://github.com/egoistique/TravelWithFriends_backend) <br />
+[Frontend](https://github.com/bdybgs/TravelWithFriends-web) <br />
+[Deploy](https://github.com/egoistique/twf_deploy_version) <br />
 
-## <span style="font-size:larger;">Код программы: </span>
-- [Backend](https://github.com/egoistique/TravelWithFriends_backend) 
-- [Frontend](https://github.com/bdybgs/TravelWithFriends-web)
-- [Deploy](https://github.com/egoistique/twf_deploy_version)
-
-## <span style="font-size:larger;">Сервисы: </span>
+# Сервисы 
 - [YouTrack](https://triptogether.youtrack.cloud/agiles/159-2/current)
 - [Miro](https://miro.com/app/board/uXjVNKQcULM=/)
 - [Figma](https://www.figma.com/file/2lYl2967DBFk9prQNro5qh/WebTrip?type=design&node-id=0-1&mode=design&t=pHlSkdu70V9r9KgC-0)
+- [Swagger hub](https://app.swaggerhub.com/apis/kirakirillova762/travel-wf_api/TWF#/)
 
-## <span style="font-size:larger;">Документация: </span>
+# Аналитика приложения 
+[Яндекс Метрика](https://metrika.yandex.ru/dashboard?id=97428533) <br />
+[Яндекс Метрика PDF](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Аналитика20веб-приложения)<br />
 
-- [Техническое задание docx](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Техническое%20задание.docx)
-- [Техническое задание pdf](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Техническое%20задание.pdf)
-- [Сопроводительное письмо docx](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Сопроводительное%20письмо.docx)
-- [Сопроводительное письмо pdf](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Сопроводительное%20письмо.pdf)
-- [Презентация pdf](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Презентация.pdf) 
-- [Презентация pptx](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Презентация.pptx)
+# Документация
+- [Курсовой проект](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Курсовой%20Проект)
+- [Презентация проекта](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Презентации%20проекта/Презентация%20продукта) 
+- [Сопроводительное письмо](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Сопроводительное%20письмо)
+- [Техническое задание](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Техническое%20задание)
+- [Презентация ТЗ](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Презентации%20проекта/Презентация%20ТЗ)
+- [Swagger docs yaml](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/SwaggerAPI)
+
+# Видеообзор веб-приложения
 - [Видеопрезентация](https://youtu.be/zmIHbz_8H18)
 - [Видеообзор бекенда](https://youtu.be/lFWrIwzohBg)
 - [Видеообзор фронтенда]()
 - [Видеообзор деплоя](https://youtu.be/3DBmakNYca0)
-- [Курсовой проект pdf](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Курсовой%20Проект.pdf)
-- [Курсовой проект docx](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Курсовой%20Проект.docx)
-- [Swagger docs yaml](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/swagger_docs_api.yaml)
-- [Swagger hub](https://app.swaggerhub.com/apis/kirakirillova762/travel-wf_api/TWF#/)
 
-## <span style="font-size:larger;">Аналитика приложения: </span>
+# Инструкция по запуску веб-приложения
 
-[Яндекс Метрика](https://metrika.yandex.ru/dashboard?id=97428533)
+## Инструкция по запуску веб-приложения со стороны пользователя
 
-## <span style="font-size:larger;">Тестовые данные для входа в приложение: </span>
+Необходимо перейти по ссылке в [веб-приложение](https://travel-with-friends.ru). Далее возможен вариант его использования в качестве неавторизованного пользователя и авторизованного пользователя. <br />
 
-[Ссылка на сайт](https://travel-with-friends.ru)   
+<b>Учетные данные администратора:</b> <br />
+<b>Логин:</b> admin@travelwf.com <br />
+<b>Пароль:</b> pass1234 <br />
 
-Администратор:
+<b>Учетные данные тестового пользователя:</b> <br />
+<b>Логин:</b> user@travelwf.com  <br />
+<b>Пароль:</b> 123456 <br />
 
-Логин: admin@travelwf.com  
-Пароль: pass1234  
-
-Пользователь:
-
-Логин: user@travelwf.com  
-Пароль: 123456  
-
-
-## <span style="font-size:larger;">Инструкция для запуска: </span>
-Инструкция по запуску веб-приложения со стороны разработчика:
+## Инструкция по запуску веб-приложения со стороны разработчика
 
 Запуск Backend:  
-Необходимо установить папку с серверной частью кода, открыть решение в ide, запустить 2 проекта: Travel.Api и Travel.Identity. Убедиться, что в docker есть контейнер с PostgreSQL.
+Необходимо установить папку с серверной частью кода, открыть решение в ide, запустить 2 проекта: Travel.Api и Travel.Identity. Убедиться, что в docker есть контейнер с PostgreSQL. <br />
 
 Альтернативный вариант:   
 Находясь в корневом каталоге проекта в cmd прописать команды:
