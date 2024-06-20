@@ -22,8 +22,8 @@
 [Яндекс Метрика PDF](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Аналитика20веб-приложения)<br />
 
 # Документация
-- [Курсовой проект](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Курсовой%20Проект)
-- [Презентация проекта](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Презентации%20проекта/Презентация%20продукта) 
+- Курсовой проект [[docx]](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Курсовой%20проект/Курсовой%20Проект.docx) [[pdf]](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Курсовой%20проект/Курсовой%20Проект.pdf)
+- Презентация проекта [[pdf]](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Презентации%20проекта/Презентация%20продукта/Презентация.pdf) [[pptx]](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Презентации%20проекта/Презентация%20продукта/Презентация.pptx) 
 - [Сопроводительное письмо](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Сопроводительное%20письмо)
 - [Техническое задание](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Техническое%20задание)
 - [Презентация ТЗ](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Презентации%20проекта/Презентация%20ТЗ)
