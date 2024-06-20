@@ -26,7 +26,7 @@
 - Презентация проекта [[pdf]](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Презентации%20проекта/Презентация%20продукта/Презентация.pdf) [[pptx]](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Презентации%20проекта/Презентация%20продукта/Презентация.pptx) 
 - Сопроводительное письмо [[docx]](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Сопроводительное%20письмо/Сопроводительное%20письмо.docx) [[pdf]](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Сопроводительное%20письмо/Сопроводительное%20письмо.pdf)
 - Техническое задание [[docx]](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Техническое%20задание/Техническое%20задание.docx) [[pdf]](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Техническое%20задание/Техническое%20задание.pdf)
-
+- Подтверждение корректного оформления технического задания [[Docx]](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Техническое%20задание/Perechen_zadach_po_oformleniyu_tekhnicheskogo_zadania.docx) [[PDF]](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Техническое%20задание/Perechen_zadach_po_oformleniyu_tekhnicheskogo_zadania.docx)
 - Презентация ТЗ  [[pdf]](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Презентации%20проекта/Презентация%20ТЗ/Презентация_ТЗ.pdf) [[pptx]](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Презентации%20проекта/Презентация%20ТЗ/Презентация_ТЗ.pptx) 
 
 - Swagger [[docs yaml]](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/SwaggerAPI)
