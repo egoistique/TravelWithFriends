@@ -19,7 +19,7 @@
 
 # Аналитика приложения 
 [Яндекс Метрика](https://metrika.yandex.ru/dashboard?id=97428533) <br />
-[Яндекс Метрика PDF](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Аналитика20веб-приложения)<br />
+[Яндекс Метрика PDF](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Аналитика%20веб-приложения)<br />
 
 # Документация
 - Курсовой проект [[docx]](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Курсовой%20проект/Курсовой%20Проект.docx) [[pdf]](https://github.com/egoistique/TravelWithFriends/blob/main/documentation/Курсовой%20проект/Курсовой%20Проект.pdf)
